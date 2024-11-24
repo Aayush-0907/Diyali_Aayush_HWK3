@@ -1,0 +1,122 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    color: white;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(../images/background-2.jpg);
+}
+
+
+
+header {
+   
+    padding: 10px;
+    border: 5px solid red;
+    
+font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url(../images/background-2.jpg);
+    
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 10px;
+    background-image: url(../images/background-1.jpg);
+    
+    background-size: cover;
+    
+    
+    background-blend-mode: color-burn;
+}
+
+section {
+    width: 280px;
+    margin: 10px;
+    border: 5px solid;
+    border-radius: 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: white;
+  
+}
+
+footer {
+    padding: 40px 100px 0px 0px;
+    text-align: center;
+    
+    height: 20px;
+    position: sticky;
+    top: 100%;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    padding: 10px;
+}
+
+
+
+#todo {
+    border-color: #0000ff;
+    background-color: #3f639950;
+}
+
+#inprogress {
+    border-color: #ff0000b1;
+    background-color: #8c282850;
+}
+
+#done {
+    border-color: #fffb00;
+    background-color: #7e843399;
+}
+
+#todo_items li:nth-child(odd) {
+    background-color: #0000ff;
+}
+
+#inprogress_items li:nth-child(odd) {
+    background-color: #ff0000b1;
+}
+
+#done_items li:nth-child(odd) {
+    background-color: #fffb00;
+}
+
+
+
+#inprogress input[type=checkbox]:checked + span::after {
+    content: "🔱";
+}
+
+#done input[type=checkbox]:checked + span::after {
+    content: "🗿";
+}
+
+
+
+
+
+
